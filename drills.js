@@ -10,6 +10,16 @@ function createObject() {
   };
 }
 
+function updateObject(obj) {
+    obj.foo = 'foo';
+    obj.bar = 'bar';
+    obj.bizz = 'bizz';
+    obj.bang = 'bang';
+}
+
 const testObject = createObject();
 console.log(testObject.foo);
 console.log(testObject.sayHello());
+
+updateObject(testObject);
+console.log(testObject.bizz);
